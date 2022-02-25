@@ -11,7 +11,7 @@ import Foundation
 
 var randomNumber = 0
 var range = 100
-
+var x = 0
 var level = 1
 
 
@@ -133,6 +133,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playAgain(_ sender: Any) {
+        //High score implementation
+        if level > x{
+            x = level
+            highScore.text = String(x)
+        }
         numSlider.setValue(50.0, animated: false)
         randomNumber = Int(arc4random_uniform(101))
         numLabel.text = String(randomNumber)
