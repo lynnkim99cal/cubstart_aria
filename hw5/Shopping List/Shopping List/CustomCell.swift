@@ -15,11 +15,15 @@ struct CustomCell: View {
     var body: some View {
         HStack{
             Text(itemName)
+                //.padding(50)
+                //.position()
+            
     
             Image(imageName)
                 .resizable()
-                .frame(width: 50.0, height: 50.0, alignment:.trailing)
-                .padding(10)
+                .frame(width: 50.0, height: 50.0)
+                .position(x: 150, y: 25)
+                .padding(5)
                 
             
         }

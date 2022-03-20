@@ -22,17 +22,33 @@ struct ContentView: View {
     var list = [
         Items(imageName: "banana", itemName: "Bananas", quantity: "3"),
         Items(imageName: "apple", itemName: "Apples", quantity: "4"),
+        
+    ]
+    var list2 = [
+        Items(imageName: "eggplant", itemName: "Eggplant", quantity: "1")
+
+    ]
+    var list3 = [
+        Items(imageName: "ribeye", itemName: "Ribeye", quantity: "1"),
         Items(imageName: "eggs", itemName: "Eggs", quantity: "12")
+
 
     ]
     
     var body: some View {
         NavigationView{
-            ZStack(){
             
             List{
                 Section(header: Text("Fruits")) {
                     ForEach(list) {i in
+                        CustomCell(imageName: i.imageName, itemName: i.itemName, quantity: i.quantity)}.navigationTitle("Shopping List")
+                }
+                Section(header: Text("Vegetables")) {
+                    ForEach(list2) {i in
+                        CustomCell(imageName: i.imageName, itemName: i.itemName, quantity: i.quantity)}.navigationTitle("Shopping List")
+                }
+                Section(header: Text("Proteins")) {
+                    ForEach(list3) {i in
                         CustomCell(imageName: i.imageName, itemName: i.itemName, quantity: i.quantity)}.navigationTitle("Shopping List")
                 }
         
@@ -40,7 +56,6 @@ struct ContentView: View {
         }
         
     }
-        }
 }
 
 }
