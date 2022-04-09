@@ -3,7 +3,7 @@ import Combine
 
 struct FeedView: View {
     @Environment(\.openURL) var openURL
-    @StateObject var viewModel: ArticleViewModelImpl = ArticleViewModelImpl(service: ArticleServiceImpl()
+    @StateObject var viewModel: ArticleViewModelImpl = ArticleViewModelImpl(service: ArticleServiceImpl())
 
     var body: some View {
         NavigationView{
