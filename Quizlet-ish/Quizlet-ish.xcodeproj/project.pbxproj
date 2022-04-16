@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008FD30D280A78C600DCE2E6 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD30C280A78C600DCE2E6 /* AuthenticationService.swift */; };
+		008FD310280A798E00DCE2E6 /* NewCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD30F280A798E00DCE2E6 /* NewCardForm.swift */; };
+		008FD312280A79AF00DCE2E6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD311280A79AF00DCE2E6 /* CardView.swift */; };
+		008FD314280A79C100DCE2E6 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD313280A79C100DCE2E6 /* CardListView.swift */; };
+		008FD317280A79F200DCE2E6 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD316280A79F200DCE2E6 /* CardListViewModel.swift */; };
+		008FD319280A7A0200DCE2E6 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD318280A7A0200DCE2E6 /* CardViewModel.swift */; };
+		008FD31C280A7A3500DCE2E6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD31B280A7A3500DCE2E6 /* Card.swift */; };
+		008FD31E280A7A8600DCE2E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 008FD31D280A7A8600DCE2E6 /* GoogleService-Info.plist */; };
+		008FD320280A7B0900DCE2E6 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FD31F280A7B0900DCE2E6 /* CardRepository.swift */; };
 		00FD10DC280A7042000EAA5B /* Quizlet_ishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD10DB280A7042000EAA5B /* Quizlet_ishApp.swift */; };
 		00FD10DE280A7042000EAA5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD10DD280A7042000EAA5B /* ContentView.swift */; };
 		00FD10E0280A7047000EAA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FD10DF280A7047000EAA5B /* Assets.xcassets */; };
@@ -62,6 +71,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008FD30C280A78C600DCE2E6 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		008FD30F280A798E00DCE2E6 /* NewCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardForm.swift; sourceTree = "<group>"; };
+		008FD311280A79AF00DCE2E6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		008FD313280A79C100DCE2E6 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		008FD316280A79F200DCE2E6 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		008FD318280A7A0200DCE2E6 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		008FD31B280A7A3500DCE2E6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		008FD31D280A7A8600DCE2E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "Quizlet-ish/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		008FD31F280A7B0900DCE2E6 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
 		00FD10D8280A7042000EAA5B /* Quizlet-ish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quizlet-ish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FD10DB280A7042000EAA5B /* Quizlet_ishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizlet_ishApp.swift; sourceTree = "<group>"; };
 		00FD10DD280A7042000EAA5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +146,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008FD305280A77DA00DCE2E6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				00FD10DB280A7042000EAA5B /* Quizlet_ishApp.swift */,
+				00FD10DF280A7047000EAA5B /* Assets.xcassets */,
+				008FD31D280A7A8600DCE2E6 /* GoogleService-Info.plist */,
+				00FD10E4280A7047000EAA5B /* Quizlet_ish.entitlements */,
+				008FD31F280A7B0900DCE2E6 /* CardRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		008FD306280A780E00DCE2E6 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				008FD30F280A798E00DCE2E6 /* NewCardForm.swift */,
+				008FD311280A79AF00DCE2E6 /* CardView.swift */,
+				008FD313280A79C100DCE2E6 /* CardListView.swift */,
+			);
+			name = Card;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		008FD30B280A789400DCE2E6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				008FD30C280A78C600DCE2E6 /* AuthenticationService.swift */,
+			);
+			name = Services;
+			path = Card/Services;
+			sourceTree = "<group>";
+		};
+		008FD30E280A78D600DCE2E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				008FD306280A780E00DCE2E6 /* Card */,
+			);
+			name = Views;
+			path = Card/Views;
+			sourceTree = "<group>";
+		};
+		008FD315280A79D200DCE2E6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				008FD316280A79F200DCE2E6 /* CardListViewModel.swift */,
+				008FD318280A7A0200DCE2E6 /* CardViewModel.swift */,
+			);
+			name = ViewModels;
+			path = Repositories/ViewModels;
+			sourceTree = "<group>";
+		};
+		008FD31A280A7A1C00DCE2E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				008FD31B280A7A3500DCE2E6 /* Card.swift */,
+			);
+			name = Models;
+			path = Repositories/Models;
+			sourceTree = "<group>";
+		};
 		00FD10CF280A7042000EAA5B = {
 			isa = PBXGroup;
 			children = (
@@ -151,10 +229,12 @@
 		00FD10DA280A7042000EAA5B /* Quizlet-ish */ = {
 			isa = PBXGroup;
 			children = (
-				00FD10DB280A7042000EAA5B /* Quizlet_ishApp.swift */,
+				008FD31A280A7A1C00DCE2E6 /* Models */,
+				008FD315280A79D200DCE2E6 /* ViewModels */,
+				008FD30B280A789400DCE2E6 /* Services */,
+				008FD30E280A78D600DCE2E6 /* Views */,
+				008FD305280A77DA00DCE2E6 /* Repositories */,
 				00FD10DD280A7042000EAA5B /* ContentView.swift */,
-				00FD10DF280A7047000EAA5B /* Assets.xcassets */,
-				00FD10E4280A7047000EAA5B /* Quizlet_ish.entitlements */,
 				00FD10E1280A7047000EAA5B /* Preview Content */,
 			);
 			path = "Quizlet-ish";
@@ -324,6 +404,7 @@
 			files = (
 				00FD10E3280A7047000EAA5B /* Preview Assets.xcassets in Resources */,
 				00FD10E0280A7047000EAA5B /* Assets.xcassets in Resources */,
+				008FD31E280A7A8600DCE2E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +429,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008FD310280A798E00DCE2E6 /* NewCardForm.swift in Sources */,
+				008FD31C280A7A3500DCE2E6 /* Card.swift in Sources */,
+				008FD30D280A78C600DCE2E6 /* AuthenticationService.swift in Sources */,
 				00FD10DE280A7042000EAA5B /* ContentView.swift in Sources */,
 				00FD10DC280A7042000EAA5B /* Quizlet_ishApp.swift in Sources */,
+				008FD319280A7A0200DCE2E6 /* CardViewModel.swift in Sources */,
+				008FD314280A79C100DCE2E6 /* CardListView.swift in Sources */,
+				008FD320280A7B0900DCE2E6 /* CardRepository.swift in Sources */,
+				008FD312280A79AF00DCE2E6 /* CardView.swift in Sources */,
+				008FD317280A79F200DCE2E6 /* CardListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
